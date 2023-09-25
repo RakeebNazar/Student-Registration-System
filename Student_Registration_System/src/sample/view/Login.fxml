@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Ap" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Login">
+   <children>
+      <Pane layoutX="-6.0" prefHeight="67.0" prefWidth="340.0" style="-fx-background-color: #c2185b;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="151.0" layoutY="19.0" prefHeight="30.0" prefWidth="39.0" text="SRC" textAlignment="CENTER" textFill="#d5d5e2">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="login" layoutX="124.0" layoutY="243.0" prefHeight="9.0" prefWidth="79.0" style="-fx-background-color: #c2185b;" text="Login" textFill="WHITESMOKE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.26" />
+         </effect>
+      </JFXButton>
+      <Label fx:id="Error" layoutX="246.0" layoutY="77.0" prefHeight="24.0" prefWidth="79.0" text="Login Error!" textFill="#e85a3d" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="90.0" layoutY="143.0" prefHeight="30.0" prefWidth="149.0" promptText="Name" />
+      <PasswordField fx:id="password" layoutX="89.0" layoutY="195.0" prefHeight="30.0" prefWidth="149.0" promptText="Password" />
+   </children>
+</AnchorPane>
